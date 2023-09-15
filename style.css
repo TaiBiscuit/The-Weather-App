@@ -1,0 +1,234 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+#app {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 25%;
+  padding: 1rem;
+  text-align: center;
+  perspective: 1500px;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+
+/* SEARCH */
+
+.search-box{
+  margin-left: 2rem;
+}
+
+#form{
+  display: flex;
+  flex-direction: column;
+}
+
+.form-input{
+  margin-bottom: 1rem;
+  height: 30px;
+}
+
+.country-list{
+  height: 30px;
+  margin-bottom: 1rem;
+}
+
+/* CONTAINER */
+
+.container{
+  width: 65%;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transform-style: preserve-3d;
+  border-radius: 20px;
+}
+
+.weather-card{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.reg-info{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+
+/* LEFT */
+
+.left{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  color: rgba( 255, 255, 255, 0.8 );
+}
+
+.city-c{
+  font-size: 40px;
+  text-decoration: underline;
+  font-style: italic;
+}
+
+#weather-img{
+  height: 150px;
+  transition: all 0.2s ease;
+}
+
+#weather-img:hover{
+  transform: scale(5);
+  transform: translateZ(20px);
+}
+
+.temperature{
+  font-size: 40px;
+  font-weight: bold;
+}
+
+
+/* RIGHT */
+
+.right{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-left: 3rem;
+  border-radius: 20px;
+}
+
+
+/* BELOW */
+
+.next-days-img{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.next-img{
+  width: 50px;
+  margin-right: 0.7rem;
+}
+
+.next-days-info{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 2rem;
+}
+
+.next-days-text{
+  margin-right: 0.7rem;
+}
+
+.change-btn{
+  margin-bottom: 1rem
+}
+
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+
+
+.hide{
+  display: none;
+}
